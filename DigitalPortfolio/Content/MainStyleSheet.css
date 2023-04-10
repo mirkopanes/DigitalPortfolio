@@ -1,0 +1,68 @@
+﻿/* DESIGN FOR THE DIGITAL PORTFOLIO */
+
+/*BODY*/
+body {
+    background-color: #FFFFFF;
+}
+
+/*NAVBAR*/
+#nav {
+    background-color: #497174;
+    border-radius: 3px;
+    box-shadow: 4px 4px 4px 4px silver;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#options {
+    display: flex;
+    justify-content: right;
+    font-family: Verdana;
+}
+
+.myname, .mname {
+    list-style-type: none;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+#About, #Portfolio, #Resume, #Contact {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#AboutIcon, #PortfolioIcon, #ResumeIcon, #ContactIcon {
+    vertical-align: middle;
+}
+
+#About:hover, #Portfolio:hover, #Resume:hover, #Contact:hover {
+    color: #1E232C;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+/*ABOUT ME*/
+p {
+    text-align: justify;
+}
+
+#myDescription {
+    padding: 100px 30px 30px 30px;
+}
+#myPicture {
+    padding: 100px 30px 30px 30px;
+
+}
+.myPicA {
+    background-color: #D6E4E5;
+    padding: 30px 30px 30px 30px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px 4px silver;
+}
+#Mirks {
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 25px;
+}

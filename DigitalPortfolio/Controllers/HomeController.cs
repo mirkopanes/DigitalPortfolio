@@ -12,10 +12,15 @@ namespace DigitalPortfolio.Controllers
         {
             return View();
         }
-
-        public ActionResult About()
+        public ActionResult Portfolio()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Your portfolio page.";
+
+            return View();
+        }
+        public ActionResult Resume()
+        {
+            ViewBag.Message = "Your resume page.";
 
             return View();
         }

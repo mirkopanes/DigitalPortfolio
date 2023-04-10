@@ -3,23 +3,66 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    <!--GOOGLE ICON & FONT-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>@ViewBag.Title</title>
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/bootstrap")
+
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-gradient" id="nav">
         <div class="container">
-            @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <ul class="myname">
+                <li><h1 class="mname">@Html.ActionLink("Mirko Lawrence Panes", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</h1></li>
+            </ul>
+
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <ul class="navbar-nav flex-grow-1" id="options">
+                    <!--ABOUT-->
+                    <li>
+                        <a href="~/Home/Index" id="About">
+                            <i class="material-icons" id="AboutIcon">
+                                account_box
+                            </i>
+                            About Me
+                        </a>
+                    </li>
+
+                    <!--PORTFOLIO-->
+                    <li>
+                        <a href="~/Home/Portfolio" id="Portfolio">
+                            <i class="material-icons" id="PortfolioIcon">
+                                source
+                            </i>
+                            Portfolio
+                        </a>
+                    </li>
+
+                    <!--RESUME-->
+                    <li>
+                        <a href="~/Home/Resume" id="Resume">
+                            <i class="material-icons" id="ResumeIcon">
+                                article
+                            </i>
+                            Resume
+                        </a>
+                    </li>
+
+                    <!--CONTACT-->
+                    <li>
+                        <a href="~/Home/Contact" id="Contact">
+                            <i class="material-icons" id="ContactIcon">
+                                call
+                            </i>
+                            Contact
+                        </a>
+                    </li>
+
                 </ul>
             </div>
         </div>
